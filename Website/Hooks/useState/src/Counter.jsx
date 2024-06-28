@@ -4,7 +4,13 @@ function Counter() {
   const [counter, setCounter] = useState(0);
 
   const incrementCount = () => {
-    setCounter(counter + 1);
+    //setCounter(counter + 1);
+
+    //! updater function
+    //* Good pratice
+    setCounter((c) => c + 1);
+    setCounter((c) => c + 1);
+    setCounter((c) => c + 1);
   };
 
   const decrementCount = () => {
@@ -12,7 +18,9 @@ function Counter() {
   };
 
   const reset = () => {
-    setCounter(0);
+    // setCounter(0);
+    //! updater function
+    setCounter((c) => (c = 0));
   };
 
   return (
