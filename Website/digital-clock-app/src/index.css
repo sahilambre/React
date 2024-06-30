@@ -1,0 +1,29 @@
+body {
+  background-image: url(/Users/sahilambre/Documents/CODE/React/Website/digital-clock-app/src/assets/background.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+
+  /* optional */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock-container {
+  backdrop-filter: blur(0.9px);
+  width: 50vh;
+  padding: 10px;
+}
+
+.clock {
+  color: white;
+  font-size: 5rem;
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsl(0, 2%, 64%);
+}
